@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/mystyle.css">
+</head>
+<body>
+<div class="wd-col-10 home-container">
+<div class="header">
+  <a href="../index.html" class="logo">RideMyWay</a>
+  <div class="header-right">
+    <a href="../index.html">Home</a>
+    <a  class="active" href="userprofile.html">Profile</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+      <a href="#">Logout</a>
+
+
+  </div>
+</div>
+
+<div class="wd-col-12" style="overflow:auto">
+  <div class="menu-left">
+    <a href="pending.html">Join Requests&nbsp;<span class="red">&nbsp;3&nbsp;</span></a>
+    <a class="active" href="create-ride.html">Create Ride</a>
+     <a href="rides.html">Rides Available&nbsp;<span class="red">&nbsp;10&nbsp;</span></a>
+    <a href="given.html">Given&nbsp;<span class="green">&nbsp;3&nbsp;</span></a>
+    <a href="taken.html">Taken&nbsp;<span class="green">&nbsp;3&nbsp;</span></a>
+  </div>
+
+  <div class="main-body">
+  <!-- <img style="margin-top: 10px;" src="../home.jpg" height="auto" width="100%"> -->
+  <!-- //ride form -->
+
+  <form method="post" action="index.html">
+  <div class="wd-col-9 form">
+    <h1>Create Ride</h1><hr>
+    <table class="row">
+
+  <tr><td>From</td><td><input type="text" name="from" placeholder="from location" class="email"  required /></td></tr>
+  <tr><td>To</td><td><input type="text" name="to" placeholder="destination location" class="email" required/></td></tr>
+  <!-- <tr><td>Category</td><td><select class="">
+    <option value="">select category</option>
+    <option value="driver">Driver</option>
+    <option value="Passenger">Passenger</option>
+  <option value="Multipurpose">Passenger</option>
+  </select> </td></tr> -->
+  <tr><td>Capacity</td><td><input type="text" name="capacity" placeholder="no of passengers" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" required/ ></td></tr>
+
+
+  <tr><td>Departure time</td><td><input type="time" name="depature" placeholder="time it will leave" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" required /></td></tr>
+    <tr><td>Cost</td><td><input type="text" name="cost" placeholder="cost per passenger" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" required /></td></tr>
+
+
+
+  <tr><td>&nbsp;</td><td><span class="btn "><a href="userprofile.html"> Back</a></span><!-- End Btn -->
+
+  <input class="ok" type="submit" name="create" value="Create"></td></tr>
+  </table>
+
+ <!-- End Box -->
+
+  </form>
+</div>
+</div>
+
+
+
+
+    <div class="right-trend">
+      <h2>Ride my Way</h2>
+      <p>Trending news and adverts will come here. Gonna be the best app ever.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

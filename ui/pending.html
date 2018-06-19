@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/mystyle.css">
+</head>
+<body>
+<div class="wd-col-10 home-container">
+<div class="header">
+  <a href="../index.html" class="logo">RideMyWay</a>
+  <div class="header-right">
+    <a href="../index.html">Home</a>
+    <a class="active" href="userprofile.html">Profile</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+      <a href="#">Logout</a>
+  </div>
+</div>
+
+<div class="wd-col-12" style="overflow:auto">
+  <div class="menu-left">
+    <a class="active" href="pending.html">Join Requests&nbsp;<span class="red">&nbsp;3&nbsp;</span></a>
+    <a href="create-ride.html">Create Ride</a>
+    <a href="rides.html">Rides Available&nbsp;<span class="red">&nbsp;10&nbsp;</span></a>
+
+    <a href="given.html">Given&nbsp;<span class="green">&nbsp;3&nbsp;</span></a>
+    <a href="taken.html">Taken&nbsp;<span class="green">&nbsp;3&nbsp;</span></a>
+  </div>
+
+  <div class="main-body">
+  <!-- <img style="margin-top: 10px;" src="../home.jpg" height="auto" width="100%"> -->
+  <h2>Join Requests</h2><hr>
+  <table>
+    <tr><th>Ride NO:</th><th>From</th><th>To</th><th>Departure</th><th>Passengers Name</th><th>Pick-up Point</th><th></th><th></th></tr>
+    <tr><td>Eg NO</td><td>Thika</td><td>Nairobi</td><td>11:00 AM</td><td>John Mutua</td><td>Juja</td><td><button class="view">Accept</button></td><td><button class="danger" onclick="Confirm()">Reject</button></td></tr>
+  </table>
+  </div>
+
+  <div class="right-trend">
+    <h2>Ride my Way</h2>
+    <p>Trending news and adverts will come here. Gonna be the best app ever.</p>
+  </div>
+</div>
+</div>
+<script>
+function Confirm(){
+  alert("Doyou really want to cancel this ride");
+}
+</script>
+
+
+</body>
+</html>

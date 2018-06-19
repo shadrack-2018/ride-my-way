@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/mystyle.css">
+</head>
+<body>
+<div class="wd-col-10 home-container">
+<div class="header">
+  <a href="../index.html" class="logo">RideMyWay</a>
+  <div class="header-right">
+    <a href="../index.html">Home</a>
+    <a class="active" href="userprofile.html">Profile</a>
+    <a  href="#contact">Contact</a>
+    <a href="#">Logout</a>
+
+  </div>
+</div>
+
+<div class="wd-col-12" style="overflow:auto">
+  <div class="menu-left">
+    <a href="pending.html">Join Requests&nbsp;<span class="red">&nbsp;3&nbsp;</span></a>
+    <a href="create-ride.html">Create Ride</a>
+    <a class="active" href="rides.html">Rides Available&nbsp;<span class="red">&nbsp;3&nbsp;</span></a>
+
+    <a href="given.html">Given&nbsp;<span class="green">&nbsp;3&nbsp;</span></a>
+    <a href="taken.html">Taken&nbsp;<span class="green">&nbsp;3&nbsp;</span></a>
+  </div>
+
+  <div class="main-body">
+  <!-- <img style="margin-top: 10px;" src="../home.jpg" height="auto" width="100%"> -->
+  <!-- <input type="search" /> -->
+  <h2>Rides Available</h2><hr>
+  <table>
+    <tr><th>Ride NO:</th><th>From</th><th>To</th><th>Departure</th><th>Start Point</th><th>Cost</th><th></th></tr>
+    <tr><td>Eg NO</td><td>Thika</td><td>Nairobi</td><td>11:00 AM</td><td>B.A.T</td><td>100</td><td><button id="join" class="view" >Join</button></td></tr>
+  </table>
+  <div id="myModal" class="modal wd-col-6">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Enter Pick Point and Contact</h3><hr>
+    <input type="text" name="pick-point" id="pick-point" placeholder="Stage to be picked" class="email" required />
+      <input type="text" name="contact" id="contact" placeholder="Phone number" class="email" required />
+    <input type="hidden" id="btnJoin"><hr>
+    <button id="close" class="danger">Close</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="view">Join</button>
+  </div>
+
+</div>
+<!-- <div id="modalSuccess" class="join-success wd-col-3">
+  <div class="success-content">
+    <span class="close">&times;</span>
+    <p>Ride Joined Succsessfully</p>
+  </div>
+</div> -->
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("join");
+//get the close Button
+var close = document.getElementById("close");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+//when user clicks close button, close the Modal
+close.onclick = function(){
+  modal.style.display = "none";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+  </div>
+
+    <div class="right-trend">
+      <h2>Ride my Way</h2>
+      <p>Trending news and adverts will come here. Gonna be the best app ever.</p>
+    </div>
+  </div>
+  <script>
+  function Confirm(){
+    alert("Confirm to join this ride");
+  }
+  </script>
+</div>
+
+</body>
+</html>
